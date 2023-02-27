@@ -1,0 +1,14 @@
+const app = require('../server');
+const fs = require('fs');
+const https = require('https');
+const port = process.env.PORT || 4445;
+
+const options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+};
+
+
+https.createServer(options, app).listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});

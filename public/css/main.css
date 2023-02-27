@@ -1,0 +1,61 @@
+.hidden {
+  display: none;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.navbar {
+  min-height: 115px;
+}
+
+
+p.lead {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px; /* set font size to 18 pixels */
+  color: #000000; /* set color to a dark gray color (using hex code) */
+  line-height: 1.5; /* set line-height to 1.5 for improved readability */
+}
+
+iframe {
+
+position: relative;
+float: left;
+border-radius: 0.6667rem;
+box-shadow: 0 4px 20px rgb(0 0 0 / 19%)
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 0 10px;            /* Footer height */
+}
+
+.outer {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+.outer > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+.outer .below {
+  z-index: 1;
+  background-color: aqua;
+}
+.outer .top {
+  z-index: 2;
+  background-color: brown;
+}
